@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Entry</title>
+   <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-s
+    calable=no" />
+        <!--<link rel="stylesheet" href="assets/css/main.css" />-->
+    
+  <link rel="stylesheet" type="text/css" href="">
+  <link rel="stylesheet" href="adminpg1.css" />
+</head>
+<body>
+  <div class="menu">
+<div class="menu">
+
+</div>
+</div>
+  <div class="flex-container" >
+  <fieldset class="form-group" style=" box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+  <table id="fresh-table" class="table" style="flex-grow: 2;" >
+            <thead>
+                
+                <th data-field="name"> Complete Journal Title</th>
+                <th data-field="country">Publisher Name</th>
+                <th data-field="city">Budget Deptartment</th>
+                <th data-field="actions" data-formatter="operateFormatter" data-events="operateEvents" style="text-align:center;">Mode (Online / Hardcopy / Online+Hardcopy)</th>
+                
+            </thead>
+              <form  action="connect.php" method="post" style="text-align:center; ">
+
+            <tbody >
+                <tr>
+                    <td>
+                      <div class="form-group">
+                         <input type="name" class="form-control" id="JName" name="JourName" placeholder="Name">
+                        </div></td>
+                    <td>
+                      <div class="form-group">
+
+                          <input type="name" class="form-control" id="JName" name="PublName" placeholder="Publisher Name">
+                        </div></td>
+                    
+                    <td>
+                      <div class="form-group">
+
+                          <input type="name" class="form-control" id="DeptName" name="DeptName" placeholder="Budget Department">
+                        </div></td>
+                    
+                    <td>
+                     <radio >
+                         <input type="radio" name="online" value="E-Copy">E-Copy
+                         <input type="radio" name="online" value="Hardcopy">Hard Copy
+                         <input type="radio" name="online" value="Both">Both
+                     </radio>
+                    </td>
+                </tr> </tbody></table>
+                <table style="align-items: center; align-content: center; column-span: 100%;"><th>
+                  <input type="Submit" name="Submit">
+                  <button type="submit" form="form1" value="Submit" onclick="myFunction()">Exit</button>
+                    <script>
+                      function myFunction() {
+                        location.replace("admin.html")
+                      }
+                    </script>
+                </th></table></form>
+                
+                
+   
+  </fieldset>
+  </div>
+
+</body>
+</html>

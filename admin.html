@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-s
+    calable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	
+	<link rel="stylesheet" href="adminpg1.css" />
+	
+<style type="text/css">
+	body, html {
+  height: 100%;
+  margin: 0;
+  
+}
+
+
+
+.bg-image {
+  /* The image used */
+ background-image: url(pic.jpg);
+  
+  /* Add the blur effect */
+  filter: blur(6px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+#bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.3); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  
+  position: absolute;
+  
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+</head>
+<body class="is-preload">
+	<div class="bg-image"></div>
+
+<div class="header" id="bg-text" style="bottom: 92%; width: 98%; position: relative;">
+  <h1>ADMINISTRATOR</h1>
+  <p></p>
+</div>
+
+<div class="topnav" id="bg-text" style="text-align: center; bottom: 25%; width: 30%; position: relative;">
+  <button type="submit" form="form1" value="Submit" onclick="myFunction()">SIGN-OUT</button>
+                    <script>
+                      function myFunction() {
+                        location.replace("index.html")
+                      }
+                    </script>
+
+</div>
+	<article class="bg-text">
+	<div class="flex-container" >
+
+<div class="card" style="width: 20rem; background-color: transparent;" >
+  <div class="card-body" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+    <h2 class="card-title" style="color: white;">DATABASE</h2>
+    <div class="flip-card-front">
+    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+    <img src="database.png" style="background-blend-mode:screen;  width: 60%;  height: 40%">
+    </div>
+    <div class="flip-card-back">
+    <a href="#" class="card-link" onclick="myFunction1()" style="display: inline-block ;
+  line-height: 50px;
+  width: 50%;
+  border-radius: 25px;background-color: rgba(0, 0, 0, 0.25); color: white;">Update </a><br>
+
+    <a href="#" class="card-link" onclick="myFunction3()" style="display: inline-block ;
+  line-height: 50px;
+  width: 50%;
+  border-radius: 25px; background-color: rgba(0, 0, 0, 0.25); color: white;
+  ">View </a>
+  <script>
+    function myFunction1() {
+                        location.replace("Db_Update.html")
+                      }
+                      function myFunction3() {
+                        location.replace("⁨Table_Display.php")
+                      }
+                    </script>
+    </div>
+  </div>
+</div>
+
+<div class="card" style="width: 20rem; background-color: transparent;">
+  <div class="card-body" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+    <div class="flip-card-front">
+<h2 class="card-title" style="color: white;">Survey</h2>
+    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+    <img src="shop.png" style=" width: 80%; background-blend-mode:screen;">
+    </div>
+    <div class="flip-card-back">
+      <a href="#" class="card-link" style="display: inline-block ;
+  color: white;
+  line-height: 50px;
+  width: 50%;
+  border-radius: 25px;background-color: rgba(0, 0, 0, 0.25)
+  ;">Take Survey </a>
+    </div>
+  </div>
+</div>
+
+<div class="card" style="width: 20rem; background-color: transparent;">
+  <div class="card-body" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+    <div class="flip-card-front">
+<h2 class="card-title" style="color: white;">Report</h2>
+    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+    <img src="report.png"style=" width: 85%; background-blend-mode:screen;">
+    </div>
+    <div class="flip-card-back">
+      <a href="#" class="card-link"  style="display: inline-block ;
+  line-height: 50px;
+  width: 50%;
+  border-radius: 25px; background-color: rgba(0, 0, 0, 0.25); color: white;
+  ">View Report </a>
+    </div>
+  </div>
+</div>
+
+</div>
+</article>
+<div class="footer" id="bg-text" style="top: 95%; width: 98%; -moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		width: 100%;
+		max-width: 100%;
+		margin-top: 2rem;
+		text-align: center;
+		letter-spacing: 0.2rem;
+			font-size: 0.6rem;
+			opacity: 0.75;
+			margin-bottom: 0;
+			text-transform: uppercase;">
+  <p class="copyright">&copy;Designed By: <a href="https://www.linkedin.com/in/samson-williams-b50351139"><b>Samson Williams</b></a>.</p>
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+      
+</body>
+</html>
